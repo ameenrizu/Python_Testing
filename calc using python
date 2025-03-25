@@ -1,0 +1,26 @@
+def add(x1,x2):
+    return x1+x2
+def sub(x1,x2):
+    return x1-x2
+def multiply(x1,x2):
+    return x1*x2
+def divide(x1,x2):
+    return x1/x2
+def mod(x1,x2):
+    return x1%x2
+print("We are about to see a simple calculator \n Select operation\n1, Add\n2, Sub \n3, multiply\n4,divion\n5,modulo percentage\n")
+operation=int(input("Enter your choice : "))
+x1=float(input("Enter the first value : "))
+x2=float(input("Enter the second value : "))
+if operation==1:
+    print("The sum of ",x1, "and ",x2," is ",add(x1,x2))
+elif operation==2:
+    print("The subtraction of ",x1, "and ",x2," is ",sub(x1,x2))
+elif operation==3:
+    print("The multiplication of ",x1,"and ",x2," is ",multiply(x1,x2))
+elif operation==4:
+    print("The division of ",x1,"and ",x2," is ",divide(x1,x2))
+elif operation==5:
+    print("The Modulo division of ",x1,"and ",x2," is ",mod(x1,x2))
+else:
+    print("invalid input")
